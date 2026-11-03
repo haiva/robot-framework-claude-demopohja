@@ -60,7 +60,6 @@ source .venv/bin/activate
 ```bash
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-pip install rf-mcp
 ```
 
 Asenna sen jälkeen Browser Libraryn selaimet ja Playwright:
