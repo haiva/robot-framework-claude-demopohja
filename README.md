@@ -169,26 +169,6 @@ $salasana = [Net.NetworkCredential]::new("", (Read-Host "Salasana" -AsSecureStri
 
 Ohjelmat näkevät pysyvät muuttujat vasta, kun ne käynnistetään uudelleen.
 
-### Vaihtoehto C: `.env`-tiedosto
-
-1. Kopioi [.env.example](.env.example) uudeksi `.env`-tiedostoksi ja täytä siihen tunnukset:
-
-   ```
-   SITE_USERNAME=testikayttaja@example.com
-   SITE_PASSWORD=salasana-tähän
-   ```
-
-2. Robot Framework ei lue `.env`-tiedostoa itse, joten aja testit `dotenv`-komennon kautta:
-
-   ```bash
-   pip install "python-dotenv[cli]"
-   dotenv run -- robot --outputdir results tests
-   ```
-
-[.gitignore](.gitignore) jättää `.env`-tiedoston pois versionhallinnasta.
-Tarkista silti ennen ensimmäistä committia komennolla `git status`, ettei
-tiedosto ole mukana.
-
 ### Tunnukset testeissä
 
 Robot Frameworkissa ympäristömuuttujaa luetaan syntaksilla `%{NIMI}`. Kirjoita
