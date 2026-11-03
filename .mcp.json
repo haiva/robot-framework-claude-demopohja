@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "robotmcp": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "robotmcp.server"
+      ],
+      "env": {}
+    }
+  }
+}

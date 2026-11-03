@@ -1,0 +1,35 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Robot Framework -tulokset
+output.xml
+log.html
+report.html
+results/
+*.png
+!docs/**/*.png
+
+# Browser Library / Playwright
+playwright-log.txt
+browser/
+.pabotsuitenames
+pabot_results/
+
+# Työkalujen välimuistit ja artefaktit
+.robocop_cache/
+.robotmcp_artifacts/
+
+# Claude Code: paikalliset asetukset
+.claude/settings.local.json
+
+# Ympäristömuuttujat
+.env
+
+# Editorit ja käyttöjärjestelmä
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
